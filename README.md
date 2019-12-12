@@ -13,6 +13,6 @@
 
     npm install
 
-### Launch server
+### Start app
     
     npm start
