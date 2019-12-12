@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EBAY WATCHER</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <div id="taskbar">
+      <div class="title">EBAY WATCHER</div>
+      <a href="#" id="close-button">close</a>
+    </div>
+    <main>
+      <ul id="list"></ul>
+      <div id="error">
+        <a id="reconnect-button" href="#"><img src="images/connection-error.png" alt="" /></a>
+      </div>
+    </main>
+    <template>
+      <li class="item">
+        <div class="image">
+          <figure style="background-image: url({{image}});"></figure>
+        </div>
+        <div class="info">
+          <h2><a href="{{url}}">{{title}}</a></h2>
+          <div class="price">{{price}}</div>
+        </div>
+      </li>
+    </template>
+    <div id="loading"><span></span></div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
