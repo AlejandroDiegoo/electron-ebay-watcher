@@ -18,7 +18,7 @@
   "devDependencies": {},
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "electron": "^3.0.4",
+    "electron": "^7.2.4",
     "electron-reload": "^1.2.5",
     "electron-store": "^2.0.0"
   }
