@@ -37,11 +37,11 @@ const getNewItems = (window, attempts = configAttempts) => {
     if (!error && response.statusCode === 200) {
       const $ = cheerio.load(body);
       const items = [];
-      $('ul#ListViewInner li.sresult').each(function(i, e) {
+      $('ul.srp-results li.s-item').each(function(i, e) {
         items.push({
-          title: $(this).find('h3.lvtitle').text(),
-          url: $(this).find('h3.lvtitle a').attr('href'),
-          price: $(this).find('.lvprice span').text(),
+          title: $(this).find('h3.s-item__title').text(),
+          url: $(this).find('h3.s-item__title a').attr('href'),
+          price: $(this).find('span.s-item__price').text(),
           ship: $(this).find('.lvshipping .ship').text(),
           image: $(this).find('img').attr('src')
         });
